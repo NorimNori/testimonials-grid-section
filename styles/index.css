@@ -46,7 +46,7 @@ body {
 .testimonial {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 2em;
   padding: 2.2em;
   color: hsl(0, 0%, 100%);
   border-radius: 10px;
@@ -84,6 +84,9 @@ body {
 .testimonial--highlighted {
   background-color: hsl(263, 55%, 52%);
 }
+.testimonial--highlighted .testimonial__photo {
+  outline: 2px solid hsla(0, 0%, 100%, 0.5);
+}
 
 .testimonial-jonathan {
   background-color: hsl(217, 19%, 35%);
@@ -101,6 +104,9 @@ body {
 .testimonial-patrick {
   background-color: hsl(219, 29%, 14%);
 }
+.testimonial-patrick .testimonial__photo {
+  outline: 2px solid hsl(263, 55%, 52%);
+}
 
 .testimonial-kira {
   background-color: hsl(0, 0%, 100%);
@@ -108,7 +114,7 @@ body {
 }
 .testimonial-kira .testimonial__status,
 .testimonial-kira .testimonial__quote {
-  color: hsl(0, 0%, 81%);
+  color: hsla(219, 29%, 14%, 0.5);
 }
 
 /*# sourceMappingURL=index.css.map */

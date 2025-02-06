@@ -1,3 +1,5 @@
+@use 'colors';
+
 @mixin centerGrid {
     display: grid;
     place-items: center;
@@ -7,5 +9,21 @@
     font: {
         size: $size;
         weight: $weight;
+    }
+}
+
+@mixin whiteCard {
+    background-color: colors.$white;
+    color: colors.$darkGrayBlue;
+
+    .testimonial__status,
+    .testimonial__quote {
+        color: colors.$transparentGrayBlue;
+    }
+}
+
+@mixin photoRing($color){
+    .testimonial__photo {
+        outline: 2px solid $color;
     }
 }
