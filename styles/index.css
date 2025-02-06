@@ -39,16 +39,12 @@ body {
   padding: 1.1rem;
 }
 
-.testimonials {
-  display: grid;
-  gap: 2rem;
-}
-
 .testimonial {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 1.8em;
+  margin: 1.3rem 0;
   color: hsl(0, 0%, 100%);
   border-radius: 10px;
   z-index: 0;
@@ -129,11 +125,29 @@ body {
   color: hsla(219, 29%, 14%, 0.5);
 }
 
+@media (min-width: 640px) and (max-width: 1223px) {
+  body {
+    padding: 2rem;
+  }
+  .testimonials {
+    columns: 2 auto;
+    column-gap: 1.5rem;
+  }
+  .testimonial {
+    max-width: 20rem;
+    margin: 0 0 2rem;
+  }
+  .testimonial__quote {
+    line-height: 1.35em;
+  }
+}
 @media (min-width: 1224px) {
   body {
     padding: 8rem;
   }
   .testimonials {
+    display: grid;
+    gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
     max-width: 75rem;
   }
