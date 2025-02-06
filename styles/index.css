@@ -38,11 +38,18 @@ body {
   padding: 1.1rem;
 }
 
+.testimonials {
+  display: grid;
+  gap: 1.7rem;
+}
+
 .testimonial {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
-  padding: 1em;
+  padding: 2.2em;
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
 }
 .testimonial__header {
   display: flex;
@@ -61,6 +68,7 @@ body {
 .testimonial__status {
   font-size: 0.85rem;
   font-weight: 500;
+  color: hsla(0, 0%, 100%, 0.5);
 }
 .testimonial__title {
   font-size: 1.41rem;
@@ -69,7 +77,38 @@ body {
 .testimonial__quote {
   font-size: 0.85rem;
   font-weight: 500;
+  color: hsla(0, 0%, 100%, 0.5);
   line-height: 1.25em;
+}
+
+.testimonial--highlighted {
+  background-color: hsl(263, 55%, 52%);
+}
+
+.testimonial-jonathan {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.testimonial-jeanette {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+.testimonial-jeanette .testimonial__status,
+.testimonial-jeanette .testimonial__quote {
+  color: hsla(219, 29%, 14%, 0.5);
+}
+
+.testimonial-patrick {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.testimonial-kira {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+.testimonial-kira .testimonial__status,
+.testimonial-kira .testimonial__quote {
+  color: hsl(0, 0%, 81%);
 }
 
 /*# sourceMappingURL=index.css.map */

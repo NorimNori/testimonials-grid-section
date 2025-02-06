@@ -41,11 +41,18 @@ body {
     padding: 1.1rem;
 }
 
+.testimonials {
+    display: grid;
+    gap: 1.7rem;
+}
+
 .testimonial {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-    padding: 1em;
+    padding: 2.2em;
+    color: colors.$white;
+    border-radius: 10px;
 
     &__header {
         display: flex;
@@ -64,7 +71,8 @@ body {
     }
 
     &__status {
-        @include mixins.fontsStyle(.85rem, 500)
+        @include mixins.fontsStyle(.85rem, 500);
+        color: colors.$transparentWhite;
     }
 
     &__title {
@@ -73,6 +81,39 @@ body {
 
     &__quote {
         @include mixins.fontsStyle(.85rem, 500);
+        color: colors.$transparentWhite;
         line-height: 1.25em;
+    }
+}
+
+.testimonial--highlighted {
+    background-color: colors.$moderateViolet;
+}
+
+.testimonial-jonathan {
+    background-color: colors.$darkGrayBlue;
+}
+
+.testimonial-jeanette {
+    background-color: colors.$white;
+    color: colors.$darkGrayBlue;
+
+    .testimonial__status,
+    .testimonial__quote {
+        color: colors.$transparentGrayBlue;
+    }
+}
+
+.testimonial-patrick {
+    background-color: colors.$darkBlackblue;
+}
+
+.testimonial-kira {
+    background-color: colors.$white;
+    color: colors.$darkGrayBlue;
+
+    .testimonial__status,
+    .testimonial__quote {
+        color: colors.$lightGray;
     }
 }
