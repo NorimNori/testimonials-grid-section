@@ -1,0 +1,11 @@
+@mixin centerGrid {
+    display: grid;
+    place-items: center;
+}
+
+@mixin fontsStyle ($size: 1rem, $weight: 500) {
+    font: {
+        size: $size;
+        weight: $weight;
+    }
+}

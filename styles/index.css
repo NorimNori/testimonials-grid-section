@@ -20,13 +20,56 @@ h1, h2, h3 {
   line-height: 1.1;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
 body {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr auto;
   font-family: "Barlow Semi Condensed", "Arial";
   background-color: hsl(210, 46%, 95%);
+  padding: 1.1rem;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1em;
+}
+.testimonial__header {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+.testimonial__photo {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50px;
+}
+.testimonial__name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.testimonial__status {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.testimonial__title {
+  font-size: 1.41rem;
+  font-weight: 600;
+}
+.testimonial__quote {
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.25em;
 }
 
 /*# sourceMappingURL=index.css.map */
