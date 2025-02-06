@@ -26,6 +26,7 @@ a:not([class]) {
 
 body {
   font-family: "Barlow Semi Condensed", "Arial";
+  background-color: hsl(210, 46%, 95%);
 }
 
 /*# sourceMappingURL=index.css.map */
