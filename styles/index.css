@@ -129,6 +129,11 @@ body {
 
 footer {
   margin-top: 2rem;
+  font-size: 0.7rem;
+}
+footer a {
+  text-align: center;
+  color: hsl(228, 45%, 44%);
 }
 
 @media (min-width: 640px) and (max-width: 1323px) {
