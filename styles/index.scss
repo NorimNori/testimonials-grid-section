@@ -36,16 +36,19 @@ body {
     @include mixins.centerGrid;
     grid-template-rows: 1fr auto;
     height: 100vh;
+    margin: 0;
 
     font-family:'Barlow Semi Condensed', 'Arial';
     background-color: colors.$grayBlue;
-    padding: 1.1rem;
+    padding: 1rem;
 }
 
 .testimonial {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    gap: .8em;
     padding: 1.8em;
     margin: 1.3rem 0;
     color: colors.$white;
@@ -116,10 +119,14 @@ body {
 }
 
 .testimonial-kira {
-    @include mixins.whiteCard
+    @include mixins.whiteCard;
 }
 
-@media (min-width: 640px) and (max-width: 1223px){
+footer {
+    margin-top: 2rem;
+}
+
+@media (min-width: 640px) and (max-width: 1323px){
     body {
         padding: 2rem;
     }
@@ -139,7 +146,7 @@ body {
     }
 }
 
-@media (min-width: 1224px) {
+@media (min-width: 1324px) {
     body{
         padding: 8rem;
     }
@@ -149,10 +156,11 @@ body {
         gap: 2rem;   
         grid-template-columns: repeat(4, 1fr);
         max-width: 75rem;
+        margin-top: -2rem;
     }
 
     .testimonial {
-        gap: .8em;
+        margin: 0;
 
         &__quote {
             line-height: 1.35em;
